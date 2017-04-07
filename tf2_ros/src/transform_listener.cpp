@@ -104,7 +104,7 @@ void TransformListener::subscription_callback_impl(const ros::MessageEvent<tf2_m
   ros::Time now = ros::Time::now();
   if(now < last_update_){
     ROS_WARN("Detected jump back in time. Clearing TF buffer.");
-    buffer_.clear();
+    // buffer_.clear();
   }
   last_update_ = now;
 
